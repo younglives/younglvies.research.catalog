@@ -1,3 +1,17 @@
 <?xml version="1.0"?>
 <object name="research_database_catalog" meta_type="Plone Catalog Tool">
+ <object name="plone_lexicon" meta_type="ZCTextIndex Lexicon">
+  <element name="Unicode Whitespace splitter" group="Word Splitter"/>
+  <element name="Unicode Case Normalizer" group="Case Normalizer"/>
+ </object>
+ <index name="country" meta_type="KeywordIndex">
+  <indexed_attr value="getResearchCountry"/>
+ </index>
+ <index name="paper_manager" meta_type="FieldIndex">
+  <indexed_attr value="getPaperManager"/>
+ </index>
+ <index name="theme" meta_type="KeywordIndex">
+  <indexed_attr value="getResearchTheme"/>
+ </index>
+ <column value="paper_manager"/>
 </object>

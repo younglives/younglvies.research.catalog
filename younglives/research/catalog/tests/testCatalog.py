@@ -50,3 +50,31 @@ class TestArchetypesConfig(unittest.TestCase):
         portal_types = catalog_map.keys()
         assert 'Author' in portal_types
         assert 'Research' in portal_types
+
+class TestCatalogSetup(unittest.TestCase):
+    """Test catalog is setup correctly"""
+    layer = INTEGRATION_TESTING
+
+    def setUp(self):
+        self.portal = self.layer['portal']
+
+    def testIndexesAdded(self):
+        research_catalog = getToolByName(self.portal, 'research_database_catalog')
+        indexes = research_catalog._catalog.indexes.keys()
+        assert 'country' in indexes
+        assert 'paper_manager' in indexes
+        assert 'theme' in indexes
+        #assert len(indexes) == 32, indexes
+
+    def testColumnsAdded(self):
+        research_catalog = getToolByName(self.portal, 'research_database_catalog')
+        columns = research_catalog.schema()
+        assert 'paper_manager' in columns
+        #assert len(columns) == 27, columns
+
+class TestCatalogReindex(unittest.TestCase):
+    """Test reindex only reindexes research types"""
+    layer = INTEGRATION_TESTING
+
+    def setUp(self):
+        self.portal = self.layer['portal']
