@@ -62,14 +62,18 @@ class TestCatalogSetup(unittest.TestCase):
         research_catalog = getToolByName(self.portal, 'research_database_catalog')
         indexes = research_catalog._catalog.indexes.keys()
         assert 'country' in indexes
+        assert 'meta_type' in indexes
         assert 'paper_manager' in indexes
+        assert 'sortable_title' in indexes
         assert 'theme' in indexes
+        assert 'Title' in indexes
         #assert len(indexes) == 32, indexes
 
     def testColumnsAdded(self):
         research_catalog = getToolByName(self.portal, 'research_database_catalog')
         columns = research_catalog.schema()
         assert 'paper_manager' in columns
+        assert 'Title' in columns
         #assert len(columns) == 27, columns
 
 class TestCatalogReindex(unittest.TestCase):
