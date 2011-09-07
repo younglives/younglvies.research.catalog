@@ -11,5 +11,12 @@
       description="The catalogue module for the research database"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-  
+
+  <genericsetup:importStep
+    name="younglives.research.catalog"
+    title="younglives.research.catalog special import handlers"
+    description=""
+    handler="younglives.research.catalog.setuphandlers.setupVarious"
+    />
+
 </configure>

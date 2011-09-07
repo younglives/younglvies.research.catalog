@@ -15,6 +15,11 @@ class TestInstallation(unittest.TestCase):
     def setUp(self):
         self.portal = self.layer['portal']
 
+    def testToolInstalled(self):
+        tool = getToolByName(self.portal, 'research_database_catalog')
+        assert tool.id == 'research_database_catalog', tool.id
+        assert tool.meta_type == 'Research Database Catalog', tool.meta_type
+
 class TestReinstall(unittest.TestCase):
     """Ensure product can be reinstalled safely"""
     layer = INTEGRATION_TESTING
