@@ -13,6 +13,12 @@
  <index name="paper_manager" meta_type="FieldIndex">
   <indexed_attr value="getPaperManager"/>
  </index>
+ <index name="primaryAuthor" meta_type="FieldIndex">
+  <indexed_attr value="getPrimaryAuthor"/>
+ </index>
+ <index name="secondaryAuthors" meta_type="KeywordIndex">
+  <indexed_attr value="getSecondaryAuthors"/>
+ </index>
  <index name="sortable_title" meta_type="FieldIndex">
   <indexed_attr value="sortable_title"/>
  </index>
@@ -25,5 +31,7 @@
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
  <column value="paper_manager"/>
+ <column value="primaryAuthor"/>
+ <column value="secondaryAuthors"/>
  <column value="Title"/>
 </object>

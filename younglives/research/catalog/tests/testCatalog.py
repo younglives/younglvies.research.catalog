@@ -65,6 +65,8 @@ class TestCatalogSetup(unittest.TestCase):
         assert 'meta_type' in indexes
         assert 'paper_manager' in indexes
         assert 'sortable_title' in indexes
+        assert 'primaryAuthor' in indexes
+        assert 'secondaryAuthors' in indexes
         assert 'theme' in indexes
         assert 'Title' in indexes
         #assert len(indexes) == 32, indexes
@@ -73,6 +75,8 @@ class TestCatalogSetup(unittest.TestCase):
         research_catalog = getToolByName(self.portal, 'research_database_catalog')
         columns = research_catalog.schema()
         assert 'paper_manager' in columns
+        assert 'primaryAuthor' in columns
+        assert 'secondaryAuthors' in columns
         assert 'Title' in columns
         #assert len(columns) == 27, columns
 
