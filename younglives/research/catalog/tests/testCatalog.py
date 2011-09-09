@@ -62,6 +62,7 @@ class TestCatalogSetup(unittest.TestCase):
         research_catalog = getToolByName(self.portal, 'research_database_catalog')
         indexes = research_catalog._catalog.indexes.keys()
         assert 'country' in indexes
+        assert 'id' in indexes
         assert 'meta_type' in indexes
         assert 'paper_manager' in indexes
         assert 'sortable_title' in indexes
@@ -74,6 +75,7 @@ class TestCatalogSetup(unittest.TestCase):
     def testColumnsAdded(self):
         research_catalog = getToolByName(self.portal, 'research_database_catalog')
         columns = research_catalog.schema()
+        assert 'id' in columns
         assert 'paper_manager' in columns
         assert 'paperAuthor' in columns
         assert 'coAuthors' in columns
