@@ -61,6 +61,10 @@ class TestCatalogSetup(unittest.TestCase):
     def testIndexesAdded(self):
         research_catalog = getToolByName(self.portal, 'research_database_catalog')
         indexes = research_catalog._catalog.indexes.keys()
+        # fields from younglives.research.authors
+        assert 'familyName' in indexes
+        assert 'nameOrder' in indexes
+        assert 'personalNames' in indexes
         assert 'country' in indexes
         assert 'id' in indexes
         assert 'meta_type' in indexes
@@ -75,6 +79,10 @@ class TestCatalogSetup(unittest.TestCase):
     def testColumnsAdded(self):
         research_catalog = getToolByName(self.portal, 'research_database_catalog')
         columns = research_catalog.schema()
+        # fields from younglives.research.authors
+        assert 'familyName' in columns
+        assert 'nameOrder' in columns
+        assert 'personalNames' in columns
         assert 'id' in columns
         assert 'paper_manager' in columns
         assert 'paperAuthor' in columns

@@ -4,6 +4,15 @@
   <element name="Unicode Whitespace splitter" group="Word Splitter"/>
   <element name="Unicode Case Normalizer" group="Case Normalizer"/>
  </object>
+ <index name="familyName" meta_type="FieldIndex">
+  <indexed_attr value="getFamilyName"/>
+ </index>
+ <index name="nameOrder" meta_type="FieldIndex">
+  <indexed_attr value="getNameOrder"/>
+ </index>
+ <index name="personalNames" meta_type="FieldIndex">
+  <indexed_attr value="getPersonalNames"/>
+ </index>
  <index name="country" meta_type="KeywordIndex">
   <indexed_attr value="getResearchCountry"/>
  </index>
@@ -34,6 +43,9 @@
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
  <column value="id"/>
+ <column value="familyName"/>
+ <column value="nameOrder"/>
+ <column value="personalNames"/>
  <column value="paper_manager"/>
  <column value="paperAuthor"/>
  <column value="coAuthors"/>
