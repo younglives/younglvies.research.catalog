@@ -1,5 +1,8 @@
 import time
-import unittest2 as unittest
+try:
+    import unittest2 as unittest
+except ImportError:
+    import unittest
 from zExceptions import BadRequest
 
 from zope.component import getSiteManager
