@@ -13,6 +13,9 @@
  <index name="personalNames" meta_type="FieldIndex">
   <indexed_attr value="getPersonalNames"/>
  </index>
+ <index name="allAuthors" meta_type="FieldIndex">
+  <indexed_attr value="getAllAuthors"/>
+ </index>
  <index name="country" meta_type="KeywordIndex">
   <indexed_attr value="getResearchCountry"/>
  </index>
@@ -42,6 +45,7 @@
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
+ <column value="allAuthors"/>
  <column value="id"/>
  <column value="familyName"/>
  <column value="nameOrder"/>
@@ -49,5 +53,6 @@
  <column value="paper_manager"/>
  <column value="paperAuthor"/>
  <column value="coAuthors"/>
+ <column value="theme"/>
  <column value="Title"/>
 </object>

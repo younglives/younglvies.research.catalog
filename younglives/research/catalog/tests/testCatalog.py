@@ -1,4 +1,7 @@
-import unittest2 as unittest
+try:
+    import unittest2 as unittest
+except ImportError:
+    import unittest
 
 from zope.interface.verify import verifyClass
 
@@ -65,6 +68,7 @@ class TestCatalogSetup(unittest.TestCase):
         assert 'familyName' in indexes
         assert 'nameOrder' in indexes
         assert 'personalNames' in indexes
+        assert 'allAuthors' in indexes
         assert 'country' in indexes
         assert 'id' in indexes
         assert 'meta_type' in indexes
@@ -83,10 +87,12 @@ class TestCatalogSetup(unittest.TestCase):
         assert 'familyName' in columns
         assert 'nameOrder' in columns
         assert 'personalNames' in columns
+        assert 'allAuthors' in columns
         assert 'id' in columns
         assert 'paper_manager' in columns
         assert 'paperAuthor' in columns
         assert 'coAuthors' in columns
+        assert 'theme' in columns
         assert 'Title' in columns
         #assert len(columns) == 27, columns
 
