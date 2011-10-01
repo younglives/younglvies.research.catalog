@@ -29,10 +29,10 @@
   <indexed_attr value="getPaperManager"/>
  </index>
  <index name="paperAuthor" meta_type="FieldIndex">
-  <indexed_attr value="getPaperAuthor"/>
+  <indexed_attr value="getRawPaperAuthor"/>
  </index>
  <index name="coAuthors" meta_type="KeywordIndex">
-  <indexed_attr value="getCoAuthors"/>
+  <indexed_attr value="getRawCoAuthors"/>
  </index>
  <index name="sortable_title" meta_type="FieldIndex">
   <indexed_attr value="sortable_title"/>
