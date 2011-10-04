@@ -10,6 +10,9 @@
  <index name="nameOrder" meta_type="FieldIndex">
   <indexed_attr value="getNameOrder"/>
  </index>
+ <index name="nextDeadline" meta_type="DateIndex">
+  <indexed_attr value="getNextDeadline"/>
+ </index>
  <index name="personalNames" meta_type="FieldIndex">
   <indexed_attr value="getPersonalNames"/>
  </index>
@@ -48,7 +51,9 @@
  <column value="allAuthors"/>
  <column value="id"/>
  <column value="familyName"/>
+ <column value="getIcon"/>
  <column value="nameOrder"/>
+ <column value="nextDeadline"/>
  <column value="personalNames"/>
  <column value="paper_manager"/>
  <column value="paperAuthor"/>
