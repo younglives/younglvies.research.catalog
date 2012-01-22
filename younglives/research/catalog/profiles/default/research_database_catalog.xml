@@ -65,7 +65,6 @@
  <column value="nameOrder"/>
  <column value="nextDeadline"/>
  <column value="personalNames"/>
- <column value="paperManager"/>
  <column value="paperAuthor"/>
  <column value="coAuthors"/>
  <column value="researchTheme"/>
