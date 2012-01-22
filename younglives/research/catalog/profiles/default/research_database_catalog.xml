@@ -70,4 +70,5 @@
  <column value="researchTheme"/>
  <column value="Title"/>
  <column value="rawTitle"/>
+ <column value="getLastComment"/>
 </object>
