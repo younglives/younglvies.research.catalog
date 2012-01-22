@@ -48,16 +48,27 @@
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
- <column value="allAuthors"/>
+ <index name="portal_type" meta_type="FieldIndex">
+  <indexed_attr value="portal_type"/>
+ </index>
+ <index name="portal_type" meta_type="FieldIndex">
+  <indexed_attr value="portal_type"/>
+ </index>
+ <index name="review_state" meta_type="FieldIndex">
+  <indexed_attr value="review_state"/>
+ </index>
+ <column value="getAllAuthors"/>
  <column value="id"/>
  <column value="familyName"/>
  <column value="getIcon"/>
+ <column value="getPaperManagerFullName"/>
  <column value="nameOrder"/>
  <column value="nextDeadline"/>
  <column value="personalNames"/>
- <column value="paper_manager"/>
+ <column value="paperManager"/>
  <column value="paperAuthor"/>
  <column value="coAuthors"/>
- <column value="theme"/>
+ <column value="researchTheme"/>
  <column value="Title"/>
+ <column value="rawTitle"/>
 </object>
