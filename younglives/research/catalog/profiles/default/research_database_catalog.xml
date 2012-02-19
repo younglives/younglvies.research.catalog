@@ -71,4 +71,5 @@
  <column value="Title"/>
  <column value="rawTitle"/>
  <column value="getLastComment"/>
+ <column value="review_state"/>
 </object>
