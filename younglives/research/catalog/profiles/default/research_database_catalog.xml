@@ -57,19 +57,19 @@
  <index name="review_state" meta_type="FieldIndex">
   <indexed_attr value="review_state"/>
  </index>
- <column value="getAllAuthors"/>
- <column value="id"/>
+ <column value="coAuthors"/>
  <column value="familyName"/>
+ <column value="getAllAuthors"/>
  <column value="getIcon"/>
+ <column value="getLastComment"/>
  <column value="getPaperManagerFullName"/>
+ <column value="id"/>
  <column value="nameOrder"/>
  <column value="nextDeadline"/>
- <column value="personalNames"/>
  <column value="paperAuthor"/>
- <column value="coAuthors"/>
- <column value="researchTheme"/>
- <column value="Title"/>
+ <column value="personalNames"/>
  <column value="rawTitle"/>
- <column value="getLastComment"/>
+ <column value="researchTheme"/>
  <column value="review_state"/>
+ <column value="Title"/>
 </object>
