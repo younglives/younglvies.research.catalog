@@ -69,6 +69,9 @@
  <column value="paperAuthor"/>
  <column value="personalNames"/>
  <column value="rawTitle"/>
+ <column value="researchCountry"/>
+ <column value="researchMethodology"/>
+ <column value="researchOutput"/>
  <column value="researchTheme"/>
  <column value="review_state"/>
  <column value="Title"/>
