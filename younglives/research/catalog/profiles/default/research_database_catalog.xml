@@ -65,6 +65,7 @@
  <column value="getAllAuthors"/>
  <column value="getIcon"/>
  <column value="getLastComment"/>
+ <column value="getPaperManagerFirstName"/>
  <column value="getPaperManagerFullName"/>
  <column value="getShortAuthors"/>
  <column value="id"/>
