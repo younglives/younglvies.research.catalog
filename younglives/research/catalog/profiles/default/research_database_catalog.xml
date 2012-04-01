@@ -68,6 +68,7 @@
  <column value="getPaperManagerFirstName"/>
  <column value="getPaperManagerFullName"/>
  <column value="getShortAuthors"/>
+ <column value="getShortCountries"/>
  <column value="id"/>
  <column value="nameOrder"/>
  <column value="nextDeadline"/>
