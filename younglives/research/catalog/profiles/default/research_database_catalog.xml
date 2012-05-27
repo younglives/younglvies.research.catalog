@@ -37,6 +37,9 @@
  <index name="coAuthors" meta_type="KeywordIndex">
   <indexed_attr value="getRawCoAuthors"/>
  </index>
+ <index name="methodology" meta_type="KeywordIndex">
+  <indexed_attr value="getResearchMethodology"/>
+ </index>
  <index name="sortable_title" meta_type="FieldIndex">
   <indexed_attr value="sortable_title"/>
  </index>
